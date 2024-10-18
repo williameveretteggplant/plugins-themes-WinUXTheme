@@ -549,9 +549,9 @@ void delete_menu(HWND win)
   if (menu == nil)
     return;
   
-  NSPopUpButtonCell *cell = [menu _owningPopUp];
-  if (cell)
-    fake = ![cell pullsDown];
+  //NSPopUpButtonCell *cell = [menu _owningPopUp];
+  //if (cell)
+  //  fake = ![cell pullsDown];
 
   // Create a temporary item map for this popup sequence...
   NSMapTable *itemMap = NSCreateMapTable(NSIntMapKeyCallBacks,
